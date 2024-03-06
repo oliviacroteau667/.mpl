@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mv Animation</title>
+    <script src="https://kit.fontawesome.com/9d2ace7861.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<style>
+    .snipit{
+        background-color: #D1D3D4;
+        border-radius: 30px;
+        width: 800px; /*MAKE THIS RESPONSIVE*/
+        height: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mvAnimation {
+        color: #442415;
+        border: #031F29 solid 1px;
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+
+    #animateMe {
+        position: absolute;
+        top: 30%;
+        right: 45%;
+        animation: mvAnimate 4s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+
+    #abc i{
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    }
+
+    #abc h3 {
+        position: absolute;
+        left: 20%;
+        top: 38%
+    }
+
+    #defg i{
+        position: absolute;
+        right: 15%;
+        top: 15%;
+    }
+
+    #defg h3 {
+        position: absolute;
+        right: 20%;
+        top: 38%
+    }
+
+    #file2 {
+        position: absolute;
+        right: 10%;
+        top: 55%
+    }
+
+   
+
+    @keyframes mvAnimate {
+        0% {
+            position: absolute;
+            left: 15%;
+            top: 55%
+        }
+        100% {
+            position: absolute;
+            left: 69%;
+            top: 55%
+        }
+    }
+
+</style>
+
+<div class="snipit">
+    <div id="mvAnimation" class="animationbox">
+        <div  id="abc" >
+            <i class="fa-solid fa-folder fa-6x"></i>
+            <h3>abc</h3>
+        </div>
+        <div id="defg">
+            <i class="fa-solid fa-folder fa-6x"></i>
+            <h3>defg</h3>
+        </div>
+        <div id="animateMe">
+            <i class="fa-solid fa-file fa-4x"></i>
+            <h3>file1.txt</h3>
+        </div>
+        <div id="file2" >
+            <i class="fa-solid fa-file fa-4x"></i>
+            <h3>file2.txt</h3>
+        </div>
+    </div>
+</div>

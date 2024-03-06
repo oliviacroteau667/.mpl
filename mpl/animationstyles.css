@@ -1,0 +1,84 @@
+/*****************************
+ANIMATIONS
+******************************/
+#cdAnimation {
+    color: #442415; /*child icon elements brown*/
+    border: #031F29 solid 1px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+#abc i{
+    position: absolute;
+    top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#abc h3 {
+    position: absolute;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#defg i{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+#defg h3{
+    position: absolute;
+    left: 13%;
+    top: 52%;
+}
+
+#hijk i{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+
+#hijk h3{
+    position: absolute;
+    right: 13%;
+    top: 52%;
+}
+
+#file {
+    position: absolute;
+    left: 19%;
+    top: 70%;
+}
+
+#user {
+    color: #F5F5F3;
+    position: absolute;
+    top: 11%;
+    left: 47%;
+    animation: cdAnimate 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cdAnimate {
+    0% {
+        top: 11%;
+        left: 47%
+    }
+    100% {
+        left: 19%;
+        top: 38%;
+
+        margin-left: 0;
+        margin-right: 0;
+        text-align: none;
+    }
+}

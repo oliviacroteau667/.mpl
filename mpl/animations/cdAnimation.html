@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cd Animation</title>
+    <script src="https://kit.fontawesome.com/9d2ace7861.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<style>
+    .snipit{
+        background-color: #D1D3D4;
+        border-radius: 30px;
+        width: 800px; /*MAKE THIS RESPONSIVE*/
+        height: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cdAnimation {
+        color: #442415; /*child icon elements brown*/
+        border: #031F29 solid 1px;
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+
+    #animateMe {
+        color: #F5F5F3;
+        position: absolute;
+        animation: cdAnimate 4s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+
+    #abc i{
+        position: absolute;
+        top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #abc h3 {
+        position: absolute;
+        top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #defg i{
+        position: absolute;
+        left: 15%;
+        top: 30%;
+    }
+
+    #defg h3{
+        position: absolute;
+        left: 20%;
+        top: 52%;
+    }
+
+    #hijk i{
+        position: absolute;
+        right: 15%;
+        top: 30%;
+    }
+
+    #hijk h3{
+        position: absolute;
+        right: 20%;
+        top: 52%;
+    }
+
+    #file {
+        position: absolute;
+        left: 19%;
+        top: 70%;
+    }
+
+    p {
+        font-weight: bold;
+        position: absolute;
+        bottom: 5%;
+        right: 10%;
+        animation: cdAnimate 2s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    }
+
+    @keyframes cdAnimate {
+        0% {
+            top: 11%;
+            left: 47%;
+        }
+        100% {
+            top: 38%;
+            left: 19%;
+        }
+    }
+
+</style>
+
+<div class="snipit">
+    <div id="cdAnimation" class="animationbox">
+        <div id="abc">
+            <i id="abc" class="fa-solid fa-folder fa-6x"></i>
+            <h3>abc</h3>
+        </div>
+        <div id="defg">
+            <i class="fa-solid fa-folder fa-6x"></i>
+            <h3>defg</h3>
+        </div>
+        <div id="hijk">
+            <i class="fa-solid fa-folder fa-6x"></i>
+            <h3>hijk</h3>
+        </div>
+        
+        <i id="file" class="fa-solid fa-file fa-4x"></i>
+        <i id="animateMe" class="fa-solid fa-user fa-3x"></i>
+    </div>
+</div>

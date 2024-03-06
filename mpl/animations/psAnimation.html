@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps Animation</title>
+    <script src="https://kit.fontawesome.com/9d2ace7861.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Kameron&display=swap');
+
+    .snipit{
+        background-color: #D1D3D4;
+        border-radius: 30px;
+        width: 800px; /*MAKE THIS RESPONSIVE*/
+        height: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    #psAnimation {
+        color: #442415; /*child icon elements brown*/
+        border: #031F29 solid 1px;
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+
+    #p2 i{
+        position: absolute;
+        top: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #p2 h3 {
+        position: absolute;
+        top: 69%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color:#031F29;
+    }
+
+    #p1 i{
+        position: absolute;
+        left: 20%;
+        top: 45%;
+    }
+
+    #p1 h3{
+        position: absolute;
+        left: 22%;
+        top: 69%;
+        color:#031F29;
+    }
+
+    #p3 i{
+        position: absolute;
+        right: 20%;
+        top: 45%;
+    }
+
+    #p3 h3{
+        position: absolute;
+        right: 22%;
+        top: 69%;
+        color:#031F29;
+    }
+
+    #pc i{
+        position: absolute;
+        top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        
+    }
+
+    #pc h3{
+        position: absolute;
+        top: 28%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color:#031F29;
+    }
+
+    </style>
+
+    <div class="snipit">
+        <div id="psAnimation" class="animationbox">
+            <div id="pc">
+                <i id="pc" class="fa-solid fa-laptop fa-6x ani"></i>
+                <h3>your computer</h3>
+            </div>
+            <div id="p1">
+                <i class="fa-solid fa-microchip fa-6x ani"></i>
+                <h3>process 1</h3>
+            </div>
+            <div id="p2">
+                <i class="fa-solid fa-microchip fa-6x ani"></i>
+                <h3>process 2</h3>
+            </div>
+            <div id="p3">
+                <i class="fa-solid fa-microchip fa-6x ani"></i>
+                <h3>process 3</h3>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
